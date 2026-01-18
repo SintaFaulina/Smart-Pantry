@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Food Management System with FIFO and Expiration Tracking">
+    <title>Smart Pantry | Food Management System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header>
+            <h1><span class="highlight">Smart</span> Pantry</h1>
+            <p>Manage your food inventory efficiently</p>
+        </header>
+
+        <div class="container">
+            <div id="alert-area"></div>
+
+            <div class="dashboard">
+                <section class="card input-card">
+                    <h2>Add New Item</h2>
+                    <form id="food-form">
+                        <div class="form-group">
+                            <label for="name">Food Name</label>
+                            <input type="text" id="name" placeholder="e.g., Milk, Bread" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category">
+                                <option value="" disabled selected>Select Category</option>
+                                <option value="Dairy">Dairy</option>
+                                <option value="Vegetable">Vegetable</option>
+                                <option value="Fruit">Fruit</option>
+                                <option value="Meat">Meat</option>
+                                <option value="Grains">Grains</option>
+                                <option value="Snacks">Snacks</option>
+                                <option value="Beverage">Beverage</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiration">Expiration Date</label>
+                            <input type="date" id="expiration">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            + Add Item
+                        </button>
+                    </form>
+                </section>
+
+                <section class="card list-card">
+                    <div class="controls-header">
+                        <h2>Inventory</h2>
+                        <div class="action-buttons">
+                            <button id="sort-btn" class="btn btn-secondary">
+                                Sort by Expired
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="search-bar">
+                        <input type="text" id="search" placeholder="Search food items...">
+                    </div>
+
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Category</th>
+                                    <th>Expiration Date</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody id="food-list">
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Smart Pantry Assignment. Algoritma dan Pemrograman 1 + Praktikum</p>
+        </footer>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
