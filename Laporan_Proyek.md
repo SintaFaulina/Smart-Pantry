@@ -1,7 +1,7 @@
 # Laporan Proyek: Smart Pantry (Manajemen Makanan)
 
 ## 1. Deskripsi Proyek
-**Smart Pantry** adalah aplikasi berbasis web sederhana untuk mengelola stok makanan. Aplikasi ini dirancang untuk membantu pengguna memantau tanggal kedaluwarsa makanan dan mengelola konsumsi stok dengan prinsip yang fleksibel (pengguna dapat memilih item mana yang ingin dikonsumsi).
+**Smart Pantry** adalah aplikasi berbasis web sederhana untuk mengelola stok makanan. Aplikasi ini dirancang untuk membantu pengguna memantau tanggal kedaluwarsa makanan dan mengelola konsumsi stok dengan prinsip yang sederhana.
 
 ## 2. Fitur Utama
 1.  **Tambah Data (Add Item)**: Pengguna dapat memasukkan nama makanan, kategori, dan tanggal kedaluwarsa.
@@ -44,7 +44,7 @@ Project/
 ## 5. Cara Menjalankan
 Karena proyek ini menggunakan **ES6 Modules**, file `index.html` tidak dapat dibuka langsung dengan cara *double-click*. Harus dijalankan melalui server lokal.
 
-1.  **Metode VS Code (Disarankan)**:
+1.  **Metode VS Code**:
     -   Instal ekstensi **Live Server**.
     -   Klik kanan pada `index.html` -> Pilih **"Open with Live Server"**.
 2.  **Metode Python**:
